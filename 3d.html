@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<style>
+ul{
+    list-style:none;
+	height:550px;
+	width:600px;
+	margin:50px auto;}
+ul li{
+    dispaly:inline;
+	-webkit-perspective:500;
+	-webkit-transform-style:preserve-3d;
+	-webkit-tansition-property:perspective;
+	-webkit-transition-duration:0.5s;}
+ul li:hover{
+    -webkit-perspective:5000;}
+ul li img{
+    border:10px solid #fcfafa;
+	-webkit-transform:rotateY(30deg);
+	-webkit-box-shadow:0 3px 10px #888;
+	-webkit-transition-property:transform;-webkit-transition-duration:0.5s;}
+ul li:hover img{-webkit-transform:rotateY(0);}
+.movieinfo{
+      border:10px solid #fcfafa;
+      padding:20px;
+	  width:200px;
+	  height:180px;
+	  background-color:#deddcd;
+	  margin:-195px 0 0 55px;
+	  position:absolute;
+     -webkit-box-shadow:0 20px 40px #888;
+	 -webkit-transform:translateZ(30px) rotateY(30deg);
+	 -webkit-transition-property:transform,box-shadow,margin;
+	-webkit-transition-duration:0.5s;}
+#movieposters li:hover .movieinfo {
+     -webkit-transform: rotateY(0deg); 
+	 -webkit-box-shadow:0 5px 10px #888; 
+	 margin:-175px 0 0 30px; }
+.movieinfo a { 
+     background-color:#7a3f3a;
+	 padding:5px 10px; color:#eee; 
+	 text-decoration:none;
+	 display:block;
+	 width:80px; 
+	 text-align:center; 
+	 margin:0 auto;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px; }
+.movieinfo a:hover, .movieinfo a:focus {
+    background-color:#6a191f; color:#fff; }
+</style>
+</head>
+<body>
+<ul id="movieposters">
+			<li>
+                <img src="images/01_iron_man_2.jpg" alt="Iron Man 2" />
+				<div class="movieinfo">
+					<h3>Iron Man 2</h3>
+					<p>With the world now aware of his dual life as the armored superhero Iron Man, billionaire inventor Tony...</p>
+					<a href="http://www.imdb.com/title/tt1228705/" title="Iron Man 2">More info</a>
+				</div>
+			</li>
+</ul>
+</body>
+</html> 
